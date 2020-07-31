@@ -5,8 +5,8 @@ class EduabiertaInfoForm(ModelForm):
     def __init__(self, *args, **kwargs):
         super(EduabiertaInfoForm, self).__init__(*args, **kwargs)
         self.fields['phone'].error_messages = {
-            "required": u"Por favor indique su numero de telefono.",
-            "invalid": u"Numero de telefono invalido"
+            "required": "Por favor indique su numero de telefono.",
+            "invalid": "Numero de telefono invalido"
         }
 
     class Meta(object):
